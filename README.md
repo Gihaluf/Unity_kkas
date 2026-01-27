@@ -1,14 +1,16 @@
 # Unity
-Kaut kas te bus 
+
+Kaut kas te bus
 
 **Darbību saraksts**
-- [ ] UI button lietojums
-- [ ] UI Input field lietojums
-- [ ] UI Text lietojums
-- [ ] UI Image lietojums
-- [ ] UI radio button lietojums
-- [ ] UI slider lietojums
-- [ ] Drag and drop fonkcionalitāte
-- [ ] Audio source lietojums
-- [ ] Riggid body un collider lieotjums
-- [ ] Projekta sagatavošana Windows OS
+
+* \[x] UI button lietojums
+* \[x] UI Input field lietojums
+* \[x] UI Text lietojums
+* \[x] UI Image lietojums
+* \[x] UI radio button lietojums
+* \[ ] UI slider lietojums
+* \[ ] Drag and drop fonkcionalitāte
+* \[ ] Audio source lietojums
+* \[ ] Riggid body un collider lieotjums
+* \[ ] Projekta sagatavošana Windows OS
