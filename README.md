@@ -9,8 +9,8 @@ Kaut kas te bus
 * \[x] UI Text lietojums
 * \[x] UI Image lietojums
 * \[x] UI radio button lietojums
-* \[ ] UI slider lietojums
+* \[x] UI slider lietojums
 * \[ ] Drag and drop fonkcionalitāte
-* \[ ] Audio source lietojums
+* \[x] Audio source lietojums
 * \[ ] Riggid body un collider lieotjums
 * \[ ] Projekta sagatavošana Windows OS
