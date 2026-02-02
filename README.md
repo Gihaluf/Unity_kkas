@@ -10,7 +10,10 @@ Kaut kas te bus
 * \[x] UI Image lietojums
 * \[x] UI radio button lietojums
 * \[x] UI slider lietojums
-* \[ ] Drag and drop fonkcionalitāte
+* \[x] Drag and drop fonkcionalitāte
 * \[x] Audio source lietojums
 * \[ ] Riggid body un collider lieotjums
 * \[ ] Projekta sagatavošana Windows OS
+* \[x] Izveidot galvenās izvēlnes ainu (paši)
+* \[ ] Izveidot TV ainu (Paši)
+* \[ ] Integrēt virtuļu ķeršanas speli
