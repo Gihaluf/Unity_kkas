@@ -1436,6 +1436,7 @@ GameObject:
   - component: {fileID: 224278979}
   - component: {fileID: 224278978}
   - component: {fileID: 224278977}
+  - component: {fileID: 224278980}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1552,6 +1553,52 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!61 &224278980
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224278975}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -1.2368164, y: 1.2366943}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1918.0654, y: 1082.0027}
+  m_EdgeRadius: 0
 --- !u!1 &331535205
 GameObject:
   m_ObjectHideFlags: 0
@@ -6450,7 +6497,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000019073486, y: 737.6255}
+  m_AnchoredPosition: {x: -0.000019073486, y: 737.6261}
   m_SizeDelta: {x: 0, y: 900}
   m_Pivot: {x: 0, y: 1}
 --- !u!23 &1585096919
@@ -6753,8 +6800,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 173917352}
   m_HandleRect: {fileID: 173917351}
   m_Direction: 2
-  m_Value: -0.000000041372733
-  m_Size: 0.18041293
+  m_Value: -0.0000010343183
+  m_Size: 0.18041185
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

@@ -12,8 +12,8 @@ Kaut kas te bus
 * \[x] UI slider lietojums
 * \[x] Drag and drop fonkcionalitāte
 * \[x] Audio source lietojums
-* \[ ] Riggid body un collider lieotjums
-* \[ ] Projekta sagatavošana Windows OS
+* \[x] Riggid body un collider lieotjums
+* \[x] Projekta sagatavošana Windows OS
 * \[x] Izveidot galvenās izvēlnes ainu (paši)
 * \[ ] Izveidot TV ainu (Paši)
 * \[ ] Integrēt virtuļu ķeršanas speli
