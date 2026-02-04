@@ -7,6 +7,9 @@ public class SoundEffectScript : MonoBehaviour
 
     public void PlaySFX (int ix)
     {
-        audioSource.PlayOneShot(audioClips[ix]);
+        if (audioSource.isPlaying)
+            audioSource.Stop();
+        else
+            audioSource.PlayOneShot(audioClips[ix]);
     }
 }
