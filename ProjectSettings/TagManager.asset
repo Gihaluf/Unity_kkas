@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Donut
   layers:
   - Default
   - TransparentFX
@@ -40,15 +41,6 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: tv
-    uniqueID: 334615355
-    locked: 0
-  - name: back
-    uniqueID: 4078639147
-    locked: 0
-  - name: stat
-    uniqueID: 2320728681
     locked: 0
   m_RenderingLayers:
   - Default
