@@ -1,5 +1,5 @@
+using TMPro;
 using UnityEngine;
-
 public class ObjectCatchScript : MonoBehaviour
 {
     public float sizeIncrease = 0.5f;
@@ -7,14 +7,15 @@ public class ObjectCatchScript : MonoBehaviour
     public GameObject heart1;
     public GameObject heart2;
     public GameObject heart3;
+    public TMP_Text Text;
     private Rigidbody2D rb;
     SFX_Script sfx;
-
-
+    private int punkti = 0;
     void Start()
     {
         sfx = FindFirstObjectByType<SFX_Script>();
         rb = GetComponent<Rigidbody2D>();
+        Text.text = "Punkti: " + punkti;
     }
 
     private int heart = 3;
@@ -25,11 +26,12 @@ public class ObjectCatchScript : MonoBehaviour
 
         if (collision.CompareTag("Donut"))
         {
+            punkti++;
             sfx.PlaySFX(3);
             Destroy(collision.gameObject);
             transform.localScale += new Vector3(sizeIncrease, sizeIncrease, 0);
             rb.mass += massIncrease;
-
+            Text.text = "Punkti: " + punkti;
         }
         else if (collision.CompareTag("Bad"))
         {
