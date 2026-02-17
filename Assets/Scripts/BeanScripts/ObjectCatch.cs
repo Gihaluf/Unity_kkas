@@ -9,12 +9,15 @@ public class ObjectCatchScript : MonoBehaviour
     public GameObject heart3;
     public TMP_Text Text;
     private Rigidbody2D rb;
+    public GameObject gameOverPanel;
     SFX_Script sfx;
+    DonutBakerScript script;
     private int punkti = 0;
     void Start()
     {
         sfx = FindFirstObjectByType<SFX_Script>();
         rb = GetComponent<Rigidbody2D>();
+        script = FindFirstObjectByType<DonutBakerScript>();
         Text.text = "Punkti: " + punkti;
     }
 
@@ -35,13 +38,18 @@ public class ObjectCatchScript : MonoBehaviour
         }
         else if (collision.CompareTag("Bad"))
         {
+            heart--;
             if (heart == 0)
             {
-
+                script.BakeDonut(false);
+            }
+            if(punkti > 0)
+            {
+                punkti--;
+                Text.text = "Punkti: " + punkti;
             }
             sfx.PlaySFX(4);
             Destroy(collision.gameObject);
-            heart--;
             switch(heart)
             {
                 case 2:
