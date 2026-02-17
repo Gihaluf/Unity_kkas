@@ -34,7 +34,7 @@ public class ObjectCatchScript : MonoBehaviour
         if (collision.CompareTag("Donut"))
         {
             punkti++;
-            sfx.PlaySFX(3);
+            sfx.PlaySFXker(3);
             Destroy(collision.gameObject);
             transform.localScale += new Vector3(sizeIncrease, sizeIncrease, 0);
             rb.mass += massIncrease;
@@ -46,7 +46,7 @@ public class ObjectCatchScript : MonoBehaviour
 
             if (heart <= 0)
             {
-                sfx.PlaySFX(5);
+                sfx.PlaySFXker(5);
                 heart = 0;
                 script.BakeDonut(false);
                 gameOverAnimator.SetBool("radit", true);
@@ -57,7 +57,7 @@ public class ObjectCatchScript : MonoBehaviour
                 punkti--;
                 Text.text = "Punkti: " + punkti;
             }
-            sfx.PlaySFX(4);
+            sfx.PlaySFXker(4);
             Destroy(collision.gameObject);
             switch(heart)
             {

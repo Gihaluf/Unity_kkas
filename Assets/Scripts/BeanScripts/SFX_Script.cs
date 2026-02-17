@@ -12,4 +12,16 @@ public class SFX_Script : MonoBehaviour
 
         sfxSource.PlayOneShot(audioClips[ix]);
     }
+    public void PlaySFXker(int ix)
+    {
+        sbyte index = (sbyte)ix;
+        if (index >= 0 && index < audioClips.Length)
+        {
+            sfxSource.PlayOneShot(audioClips[index]);
+        }
+        else
+        {
+            Debug.LogWarning("Invalid SFX index: " + ix);
+        }
+    }
 }

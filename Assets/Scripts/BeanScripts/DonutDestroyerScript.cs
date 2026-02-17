@@ -4,9 +4,6 @@ using UnityEngine;
 public class DonutDestroyScript : MonoBehaviour
 {
     SFX_Script sfx;
-    public TMP_Text counterText;
-    private int destroyedDonuts = 0;
-
 
     void Start()
     {
@@ -18,9 +15,10 @@ public class DonutDestroyScript : MonoBehaviour
         if (collision.CompareTag("Donut"))
         {
             Destroy(collision.gameObject);
-            destroyedDonuts++;
-            sfx.PlaySFX(2);
-            counterText.text = "Donuts Destroyed:\n" + destroyedDonuts;
+        }
+        if (collision.CompareTag("Bad"))
+        {
+            Destroy(collision.gameObject);
         }
     }
 }
