@@ -14,10 +14,12 @@ public class DonutBakerScript : MonoBehaviour
 
     float minPoz, maxPoz;
     Transform ovenTransform;
+    ObjectCatchScript scripts;
 
     void Start()
     {
         ovenTransform = GetComponent<Transform>();
+        scripts = FindFirstObjectByType<ObjectCatchScript>();
     }
     void Update()
     {
@@ -32,6 +34,7 @@ public class DonutBakerScript : MonoBehaviour
     {
         if (state)
         {
+            scripts.resetGame();
             isTimerRunning = true;
             StopAllCoroutines();
             StartCoroutine(Bake());
@@ -67,5 +70,10 @@ public class DonutBakerScript : MonoBehaviour
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
 
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+    public void ResetTimer()
+    {
+        timeElapsed = 0f;
+        UpdateTimerDisplay(0f);
     }
 }

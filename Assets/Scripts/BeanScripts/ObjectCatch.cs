@@ -1,15 +1,19 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 public class ObjectCatchScript : MonoBehaviour
 {
     public float sizeIncrease = 0.5f;
     public float massIncrease = 1f;
+
     public GameObject heart1;
     public GameObject heart2;
     public GameObject heart3;
     public TMP_Text Text;
     private Rigidbody2D rb;
-    public GameObject gameOverPanel;
+
+    public Animator gameOverAnimator;
+
     SFX_Script sfx;
     DonutBakerScript script;
     private int punkti = 0;
@@ -39,11 +43,16 @@ public class ObjectCatchScript : MonoBehaviour
         else if (collision.CompareTag("Bad"))
         {
             heart--;
-            if (heart == 0)
+
+            if (heart <= 0)
             {
+                sfx.PlaySFX(5);
+                heart = 0;
                 script.BakeDonut(false);
+                gameOverAnimator.SetBool("radit", true);
+                ResetToggle();
             }
-            if(punkti > 0)
+            if (punkti > 0)
             {
                 punkti--;
                 Text.text = "Punkti: " + punkti;
@@ -63,5 +72,23 @@ public class ObjectCatchScript : MonoBehaviour
                     break;
             }
         }
+    }
+    public Toggle myToggleButton;
+
+    public void ResetToggle()
+    {
+        myToggleButton.isOn = false;
+    }
+
+    public void resetGame()
+    {
+        heart = 3;
+        punkti = 0;
+        Text.text = "Punkti: " + punkti;
+        script.ResetTimer();
+        heart1.SetActive(true);
+        heart2.SetActive(true);
+        heart3.SetActive(true);
+        gameOverAnimator.SetBool("radit", false);
     }
 }
