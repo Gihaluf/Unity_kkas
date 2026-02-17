@@ -20,19 +20,28 @@ Spēlētājs vada tēlu, kura uzdevums ir noķert pēc iespējas vairāk krīto�
 * **Fizikas simulācija:** Izmantoti `Rigidbody2D` un `Collider2D` komponenti objektu interakcijai.
 * **Audio integrācija:** Katram notikumam (ķeršanai, zaudēšanai, beigām) ir savs unikāls skaņas efekts.
 
+## Darāmie darbi:
+- [x] UI button lietojums
+- [x] UI input field lietojums
+- [x] UI Text lietojums
+- [x] UI Image lietojums
+- [x] UI radio button lietojums
+- [x] Drag and drop funkcionalitāte
+- [x] audio source lietojums
+- [x] Riggid body un collider lietojums
+- [x] Projekta sagatavosana windows OS
+- [x] Izveidot galvenās izvelnes ainu
+- [x] Izveidot TV ainu
+- [x] Integrēt virtuļu ķeršanas spēli
 
-## Izpildītie darbi (Checklist)
-- [x] UI elementu lietojums (Button, TextMeshPro, Image, Toggle)
-- [x] Drag and drop funkcionālais nodrošinājums
-- [x] AudioSource un SFX vadība caur kodu
-- [x] Fizikas dzinēja (Rigidbody, Colliders) konfigurācija
-- [x] Projekta eksports Windows videi
-- [x] Galvenās izvēlnes un TV ainas izveide
-- [x] C# skripts punktu uzskaitei un "vērtību" objektiem
-- [x] Taimera sistēma (starts/stop)
-- [x] Dzīvību loģika un "Game Over" scenārijs
-- [x] Animāciju izmantošana pie spēles beigām
-
+**Darāmie darbi prieks formatīvā vērtējuma**
+  * Izstrādāt C# skriptu, kas nodrošina noķerto virtuļu uzskaiti. Tādējādi īstenojot punktu sistēmu, kas tiek attēlota ekrānā. Piedomāt pie dažādas "vērtības" objektu ķeršanas.
+  * Izstrādāt C# skriptu, kas nodrošina taimera sistēmu. Taimeris tiek startēts uzsākot virtuļu ķeršanas spēli, taču tas tiek apturēts zaudējot spēli.
+  * Izstrādāt C# skriptu, kas nodrošina spēles zaudēšanas loģiku, piemēram sadursme ar "bīstamu" objektu, ieviest "dzīvību" sistēmu.
+  * Projektā ieviest skaņas efektus un animācijas.
+  * Projekta izstrādes process tiek jēgpilni versionēts ar Git versiju kontroles sistēmu, GitHub izvietots
+    projektu aprakstošs README fails, kurš satur projekta aprakstu un ekrānšāviņus.
+  * Projekts ir izstrādāts noteiktajā termiņā, tā izstrāde ir veikta rūpīgi un tas ir darbināms bez funkcionālām nepilnībām.
 
 ## Ieskats virtuļu spēlē
 <p align="center">
